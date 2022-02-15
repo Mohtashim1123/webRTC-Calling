@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    height: 100vh;
+}
+
+.registrationUserForm,
+.roomSelectionMainBox {
+    padding: 1rem 0.5rem;
+    margin: 20vh 0;
+    /* border: 1px solid #000; */
+    /* border-radius: 10px; */
+}
+
+.card.localVideoContainer {
+    margin-bottom: 0 !important;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.card.localVideoContainer > .card-header {
+    background:rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.card.localVideoContainer video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.participantContainer {
+    position: relative;
+    padding: 0;
+    max-width: 16.6666666667%;
+    width: auto;
+    min-height: 240px;
+    background:#3c454e;
+    overflow: hidden;
+    box-shadow: inset 1px 0px 0px #000;
+    -moz-box-shadow: inset 1px 0px 0px #000;
+    -webkit-box-shadow: inset 1px 0px 0px #000;
+}
+
+.participantContainer video {
+    border: 1px #000 solid;
+    border-radius: 0 !important;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.participantContainer .label.bottomstrip {
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    background: rgba(0,0,0,0.7);
+    left: 0;
+    bottom: 0px;
+    color: #ffffff;
+    margin: 0;
+    font-size: 14px;
+}
